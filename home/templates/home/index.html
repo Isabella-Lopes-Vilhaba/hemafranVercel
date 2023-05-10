@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Homepage{% endblock title %} {% block content %}
+<div class="loader">
+    <div class="project-loader">
+        <div class="bubblingG">
+            <span id="bubblingG_1"></span>
+            <span id="bubblingG_2"></span>
+            <span id="bubblingG_3"></span>
+        </div>
+    </div>
+</div>
+<div class="loading" id="wrapper">
+    {% include 'home/navbar.html' %} {% include 'home/hero.html' %} {% include 'home/service.html' %} {% include 'home/portfolio.html' %} {% include 'home/about.html' %} {% include 'home/clients.html' %} {% include 'home/contact.html' %}
+</div>
+{% endblock content %}

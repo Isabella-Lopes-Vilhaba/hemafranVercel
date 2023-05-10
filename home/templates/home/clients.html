@@ -1,0 +1,48 @@
+{% load static %}
+
+    <section id="clients">
+        <div class="container">
+            <div class="heading">
+                <div>Nossos Clientes</div>
+                <h1 >Que adoram trabalhar conosco</h1>
+                <div class="divider">
+                    <span></span>
+                </div>
+                <p>Acreditamos muito em parcerias sólidas e procuramos sempre qualidade, transparência e agilidade em todos os processos da prestação do serviço.</p>
+            </div>
+            {% if clientes %}
+                <div class="row">
+                    <ul class="client-slider clearfix" id="client-slider">
+                        {% for cli in clientes %}
+                            <li><img src="{{ cli.logo_tipo.thumb.url }}" alt="logo-{{ cli.nome }}" class="grayscale"></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <ul class="client-nav">
+                    <li id="client-prev"></li>
+                    <li id="client-next"></li>
+                </ul>
+            {% endif %}
+        </div>
+        
+        {% if depoimentos %}
+        <div class="branded-section quote">
+            <div class="masked">
+                <div class="container">
+                    <div id="testimonials" class="bxslider clearfix">
+                        {% for dep in depoimentos %}
+                        <blockquote>
+                            <p>{{ dep.depoimento }}</p>
+                            <div class="divider">
+                                <span></span>
+                            </div>
+                            {{ dep.nome }}
+                        </blockquote>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+    </section>

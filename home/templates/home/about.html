@@ -1,0 +1,122 @@
+{% load static %}
+<section id="about">
+    <div class="container">
+        <div class="heading">
+            <div>Sobre Nós</div>
+            <h1>Quem Nós somos</h1>
+            <div class="divider">
+                <span></span>
+            </div>
+            <p>Com sede em Guarulhos/SP, iniciamos as operações para atuar no segmento de transporte rodoviário de carga, com o objetivo de garantir aos nossos clientes a melhor experiência no segmento.</p>
+        </div>
+        <div class="row">
+                <div class="col-md-6">
+                    <div class="about-item">
+                        <div class="circle pull-left">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h4>Meio-ambiente</h4>
+                        <p class="font-m">Compromisso e Responsabilidade é umas de nossas principais diretrizes, para a perpetução de nosso negócio e sustentabilidade ao longo do tempo</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="about-item delay2">
+                        <div class="circle pull-left">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h4>Nossa Gente</h4>
+                        <p class="font-m">Pessoas que são a razão de nossa existência, sem elas não conseguiriamos almejar nada e com elas podemos ir longe.</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="about-item delay4">
+                        <div class="circle pull-left">
+                            <i class="fa fa-mobile-alt"></i>
+                        </div>
+                        <h4>Tecnologia</h4>
+                        <p class="font-m">Obter os mais avançados sistemas de gerenciamento, capazes de fornecer informações seguras e fiéis, em tempo real, com segurança e eficiência.</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="about-item delay4">
+                        <div class="circle pull-left">
+                            <i class="fa fa-truck-moving"></i>
+                        </div>
+                        <h4>Modernidade</h4>
+                        <p class="font-m">Obter modernas ferramentas para auxílio de performances e eficiencia do negócio, disponibilizando aos nossos clientes todas as garantias de qualidade.</p>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    {% comment %} <div class="gray">
+        <div class="container">
+            <div class="heading">
+                <h2>Time que faz a diferença</h2>
+                <p>Sempre em conjunto, como uma unidade, buscando habilidades e conhecimentos para proporcionar ainda mais eficiencia e rentabilidade no negocio.</p>
+            </div>
+            <div class="row">
+                {% if funcionarios %}
+                    <ul class="team " id="og-grid">
+                        {% for fun in funcionarios %}
+                            <li class="col-md-3">
+                                <a href="" class="team-member" data-title="{{ fun.nome }}" data-description="{{ fun.bio }}" data-linkedin="{{ fun.linkedin }}" data-facebook="{{ fun.facebook }}">
+                                    <img src="https://via.placeholder.com/300" alt="" class="img-responsive">
+                                    <span class="name">{{ fun.nome }}</span>
+                                    <span class="title">{{ fun.cargo }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}					
+            </div>
+        </div>
+    </div> {% endcomment %}
+    {% comment %} <div class="branded-section skills">
+        <div class="masked">
+            <div class="container">
+                <div class="heading">
+                    <h2>Skills</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="chart">
+                            <div class="skill" data-percent="90">
+                                <span class="percent">90%</span>
+                            </div>
+                            <h3>HTML &amp; CSS</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="chart">
+                            <div class="skill" data-percent="96">
+                                <span class="percent">96%</span>
+                            </div>
+                            <h3>AI &amp; PS</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="chart">
+                            <div class="skill" data-percent="85">
+                                <span class="percent">85%</span>
+                            </div>
+                            <h3>JS</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="chart">
+                            <div class="skill" data-percent="94">
+                                <span class="percent">94%</span>
+                            </div>
+                            <h3>Photography</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+</section>

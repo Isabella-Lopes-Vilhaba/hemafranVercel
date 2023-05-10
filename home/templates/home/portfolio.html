@@ -1,0 +1,202 @@
+{% load static %}
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="heading">
+                <div>Nossas Referências</div>
+                <h1>O QUE FIZEMOS ATÉ AGORA</h1>
+                <div class="divider"><span></span></div>
+                <p>Com o ideal de revolucionar o mercado de transportes, implementamos soluções tecnológicas, buscando melhorias contínuas nos serviços prestados, sempre prezando pelo Compromisso e Comprometimento que são os nossos principais pilares.</p>
+            </div>
+            <div class="centered-pills">
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="javascript:void(0)">Todos</a>
+                    </li>
+                    <li class="filter" data-filter="rastreamento">
+                        <a href="javascript:void(0)">Rastreadores</a>
+                    </li>
+                    <li class="filter" data-filter="pgr">
+                        <a href="javascript:void(0)">PGR</a>
+                    </li>
+                    <li class="filter" data-filter="seguros">
+                        <a href="javascript:void(0)">Seguros</a>
+                    </li>
+                    <li class="filter" data-filter="veiculos">
+                        <a href="javascript:void(0)">Veiculos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div id="single-project"></div>
+        </div>
+        <div>
+            <ul class="full-portfolio clearfix" id="Grid">
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item rastreamento">
+                    <a href="{% url 't4s-rastreador'  %}">
+                        <img src="{% static 'img/portfolio/placeholder-3.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>T4S</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Rastreador</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item pgr">
+                    <a href="{% url 'protetor-estribo'  %}">
+                        <img src="{% static 'img/portfolio/placeholder-2.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Anti-furto Protetor de Estribo</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">PGR</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item veiculos">
+                    <a href="{% url 'carroceria-aberta' %}">
+                        <img src="{% static 'img/portfolio/placeholder.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Carroceria Aberta</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Veículos</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item seguros">
+                    <a href="{% url 'seguros-adicionais' %}">
+                        <img src="{% static 'img/portfolio/placeholder-1.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Coberturas Adicionais</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Seguros</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item rastreamento">
+                    <a href="{% url 'autotrac-rastreador' %}" target="_blank">
+                        <img src="{% static 'img/portfolio/placeholder-3.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Autotrac</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Rastreador</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item pgr">
+                    <a href="{% url 'protetor-janela' %}">
+                        <img src="{% static 'img/portfolio/placeholder-2.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Tela de Proteção de Janela integrada</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">PGR</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item veiculos">
+                    <a href="{% url 'carroceria-bau' %}">
+                        <img src="{% static 'img/portfolio/placeholder.png'' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Carroceria Bau</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Veículos</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item seguros">
+                    <a href="{% url 'seguros-gr' %}">
+                        <img src="{% static 'img/portfolio/placeholder-1.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Gerenciadora de Riscos</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Seguros</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item rastreamento">
+                    <a href="{% url 'onixsat-rastreador'  %}">
+                        <img src="{% static 'img/portfolio/placeholder-3.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>OnixSat</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Rastreador</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item pgr">
+                    <a href="{% url 'acessorios-rastreador'  %}">
+                        <img src="{% static 'img/portfolio/placeholder-2.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Trava de 5ª Roda, Trava de Bau e Sensor de Desengate</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">PGR</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item veiculos">
+                    <a href="{% url 'carroceria-sider'  %}">
+                        <img src="{% static 'img/portfolio/placeholder.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>Carroceria Sider</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Veículos</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item seguros">
+                    <a href="{% url 'seguros-apolices'  %}">
+                        <img src="{% static 'img/portfolio/placeholder-1.png' %}" class="img-responsive" alt="imagem-placeholder">
+                        <div class="mask">
+                            <h4>RCTR-C e RCF-DC</h4>
+                            <div class="divider"><span></span></div>
+                            <p class="font-m">Seguros</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="heading">
+                <h1>GOSTOU DE NOSSO PORTFÓLIO?</h1>
+                <p>Unimos destinos e entregamos cargas em todo o território nacional. Tornamo-nos referência para nossos clientes levando produtos e conectando serviços, facilitando a comercialização e flexibilização de preços, custos e lucratividade.</p>
+            </div>
+            <div style="text-align:center; margin-bottom: 50px">
+                <a href="#contact" class="btn btn-primary">Fale conosco</a>
+            </div>
+        </div>
+        <div class="branded-section numbers">
+            <div class="masked">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Estamos orgulhosos desses números</h2>
+                        <p>Ficamos orgulhosos em apresentar os números que representam a nossa evolução e contam nossa trajetória até aqui.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="number-item">
+                                <span class="number" id="clientsCounter" data-count="80" data-duration="5">80</span>
+                                <span class="text">Clientes Atendidos</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="number-item">
+                                <span class="number" id="projectCounter" data-count="35" data-duration="5">35</span>
+                                <span class="text">Frota Propria/Agregada</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="number-item">
+                                <span class="number" id="awardCounter" data-count="50" data-ration="5">50</span>
+                                <span class="text">Colaboradores</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="number-item">
+                                <span class="number" id="coffeeCounter" data-count="321" data-duration="5">321</span>
+                                <span class="text">Operações Realizadas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

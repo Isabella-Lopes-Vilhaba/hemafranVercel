@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "hemafran/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles_build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/templates/static/(.*)",
+      "dest": "/templates/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "hemafran/wsgi.py"
+    }
+  ]
+}

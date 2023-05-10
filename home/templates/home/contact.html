@@ -1,0 +1,77 @@
+{% load static %}
+<section id="contact" class="gray">
+    <div class="container">
+        <div class="heading">
+            <div>Contate-nos</div>
+            <h1>Veja como é fácil nos encontrar</h1>
+            <div class="divider">
+                <span></span>
+            </div>
+            <p>Temos varios canais para falar conosco. Nos encontre em um destes abaixo, ou ainda, em nossas redes socias. É sempre um prazer recebermos sua visita.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 adress-element ">
+                <i class="fa fa-home fa-2x"></i>
+                <h3>Nosso Endereço</h3>
+                <span class="font-l">Rua Asea, 102 - Guarulhos/SP</span>
+            </div>
+            <div class="row">
+                <div class="col-md-4 adress-element ">
+                <i class="fa fa-comment fa-2x"></i>
+                <h3>Nosso Email</h3>
+                <span class="font-l">hemafran@hemafrantransportes.com.br</span>
+            </div>
+            <div class="row">
+                <div class="col-md-4 adress-element">
+                <i class="fa fa-phone fa-2x"></i>
+                <h3>Nosso Telefone</h3>
+                <span class="font-l">(11) 2303-7524</span>
+            </div>
+        </div>
+    </div>
+    <div class="branded-section contact-form">
+        <div class="masked">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="light-font">Fale conosco </h1>
+                    <p class="light-font">Se você tem dúvidas, sugestões ou comentários, entre em contato conosco através do formulário abaixo:</p>
+                </div>
+                
+                <form class="form" autocomplete="off" method="post" id="contato" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    {% csrf_token %}
+                    <div class="form form-group">
+                        <div class="col-sm-4">
+                            <input type="text" name="nome" data-new-placeholder="Informe seu nome." class="form-control" placeholder="Nome" ,="" id="nome" required="">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="email" name="email" class="form-control" data-new-placeholder="Informe seu endereço de email." ,="" placeholder="E-mail" id="email" required="">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" name="telefone" class="form-control" data-new-placeholder="Informe seu endereço de email." ,="" placeholder="Telefone" id="telefone" required="">
+                        </div>
+                    </div>
+                    <div class="form form-group">
+                        <div class="col-sm-12">
+                            <input type="text" name="assunto" class="form-control" data-new-placeholder="Informe o assunto que deseja falar conosco." ,="" placeholder="Assunto" id="assunto" required="">
+                        </div>
+                    </div>
+                    <div class="form form-group">
+                        <div class="col-sm-12">
+                            <textarea class="form-control" ,="" name="mensagem" placeholder="Mensagem" rows="10" data-new-placeholder="Descreva sua mensagem." id="mensagem" required=""></textarea>
+                        </div>
+                    </div>
+                    <div class="form form-group commands">
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </div>
+                </form>
+                {% if messages %}
+                    <script>
+                        {% for m in messages %}
+                            alert("{{ m }}");
+                        {% endfor %}
+                    </script>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
